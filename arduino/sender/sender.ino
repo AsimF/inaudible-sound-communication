@@ -20,7 +20,7 @@ void loop() {
   //loop through spell_name (has all my name's letters) then loop through each letter's binary digits and play the corresponding note (or frequency)
   for(int i = 0; i < sizeof(spell_name); i++){
     for(int j = 0; j < sizeof(spell_name[i]); j++){
-      tone(8, nextNote(current_note, spell_name[i][j]), 25);
+      tone(8, nextNote(current_note, spell_name[i][j])*1000, 25);
     }
   }
   
